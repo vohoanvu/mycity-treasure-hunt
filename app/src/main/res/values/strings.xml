@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">My City of Da Nang</string>
+
+    <string name="madamLan_title">Madam Lan</string>
+    <string name="madamLan_description">Madam Lan is a popular dining spot in Da Nang, offering a fusion of traditional Vietnamese and modern cuisine. The restaurant is known for its beautiful colonial-style architecture and a diverse menu featuring local specialties like "cao lau" and "banh xeo". It\'s perfect for those wanting to experience authentic Vietnamese flavors in an elegant setting.</string>
+    <string name="madamLan_address">4 Bach Dang, Hai Chau District, Da Nang, Vietnam</string>
+    <string name="beMan_title">Be Man Seafood</string>
+    <string name="beMan_description">Be Man Seafood Restaurant is one of Da Nang\'s most popular seafood spots, known for its extensive and fresh selection of seafood. The restaurant is large and bustling, ideal for groups and family gatherings. Guests can choose their seafood from tanks and have it prepared to their liking. The relaxed, open-air setting and friendly service add to the appeal.</string>
+    <string name="beMan_address">Lot 11 Vo Nguyen Giap, Man Thai, Son Tra District, Da Nang, Vietnam</string>
+    <string name="bepTrang_title">Bep Trang</string>
+    <string name="bepTrang_description">Bep Trang is famous for its unique and flavorful "My Quang" (a regional noodle dish) with frog meat. This dish is a must-try for visitors seeking authentic local cuisine. The restaurant prides itself on its handmade noodles and carefully crafted broth, which provide a rich and savory dining experience. The elegant yet cozy ambiance, along with attentive service, makes it a favorite among both locals and tourists.</string>
+    <string name="bepTrang_address">K280/23 Hoang Dieu Street, Hai Chau District, Da Nang, Vietnam</string>
+    <string name="namRanh_title">Hai San Nam Ranh</string>
+    <string name="namRanh_description">Hai San Nam Ranh is renowned for its fresh and delicious seafood, making it a top choice for locals and visitors alike. The restaurant offers a wide variety of seafood dishes, all at reasonable prices. The vibrant atmosphere, friendly staff, and quick service enhance the dining experience, making it a must-visit for seafood lovers.</string>
+    <string name="namRanh_address">401 Tran Hung Dao, Son Tra District, Da Nang, Vietnam</string>
+
+    <string name="sky36_title">Sky36 Bar</string>
+    <string name="sky36_description">Sky36 Bar, located on the rooftop of the Novotel Danang Premier Han River, is the highest rooftop bar in Vietnam. It offers breathtaking panoramic views of Da Nang, making it a perfect spot to enjoy a cocktail while watching the sunset. The vibrant atmosphere, excellent music, and stylish decor attract both locals and tourists alike.</string>
+    <string name="sky36_address">36 Bach Dang, Hai Chau District, Da Nang, Vietnam</string>
+    <string name="craftsman_title">The Craftsman Cocktail Bar</string>
+    <string name="craftsman_description">The Craftsman Cocktail Bar is renowned for its expertly crafted cocktails and cozy ambiance. This hidden gem features a speakeasy vibe, making it a favorite among locals who appreciate a good drink in a relaxed and intimate setting. The bartenders are skilled mixologists, known for their creative and delicious concoctions.</string>
+    <string name="craftsman_address">28 Bach Dang, Hai Chau District, Da Nang, Vietnam</string>
+    <string name="bamboo2_title">Bamboo 2 Bar</string>
+    <string name="bamboo2_description">Bamboo 2 Bar is a beloved local hangout spot with a laid-back atmosphere and a great selection of beers and cocktails. Located near the Han River, it features live music, pool tables, and a welcoming vibe. It\'s a perfect place to unwind and socialize with both locals and expats.</string>
+    <string name="bamboo2_address"> 216 Bach Dang, Hai Chau District, Da Nang, Vietnam</string>
+    <string name="topView_title">Top View Bar</string>
+    <string name="topView_description">Top View Bar is a chic rooftop bar located at the Altara Suites Hotel. It offers stunning views of Da Nang city and the beach, providing a perfect backdrop for enjoying a cocktail. The bar is known for its elegant atmosphere, extensive drink menu, and excellent service, making it a favorite among locals looking for a sophisticated night out.</string>
+    <string name="topView_address">120 Vo Nguyen Giap, Son Tra District, Da Nang, Vietnam</string>
+
+    <string name="factoryCoffee_title">43 Factory Coffee Roaster</string>
+    <string name="factoryCoffee_description">43 Factory Coffee Roaster is a must-visit for coffee enthusiasts. Known for its specialty coffee and minimalist, industrial-style decor, it offers a unique coffee experience. The shop roasts its own beans, ensuring fresh and flavorful brews. It\'s a great spot for those looking to savor expertly crafted coffee in a trendy setting.</string>
+    <string name="factoryCoffee_address">Lot 422, Ngo Thi Sy, My An, Ngu Hanh Son District, Da Nang, Vietnam</string>
+    <string name="utTich_title">Ca Phe Ut Tich</string>
+    <string name="utTich_description">Ca Phe Ut Tich is known for its charming Hoi An-inspired decor, creating a nostalgic yet lively atmosphere. The coffee shop features a combination of traditional and modern elements, offering a peaceful retreat with gentle background music. It is an ideal spot for relaxing, studying, or catching up with friends. The menu includes a variety of delicious beverages, and the cafe is praised for its friendly and professional service.</string>
+    <string name="utTich_address">100–102 Bach Dang, Hai Chau District, Da Nang, Vietnam</string>
+    <string name="congCoffee_title">Cafe Cong</string>
+    <string name="congCoffee_description">Cafe Cong is part of a popular Vietnamese coffee chain known for its unique retro decor and cozy ambiance. The cafe offers a variety of drinks, but its signature "coconut coffee" is a standout. It\'s a great place to experience a nostalgic vibe while enjoying a delicious beverage.</string>
+    <string name="congCoffee_address">96–98 Bach Dang, Hai Chau District, Da Nang, Vietnam</string>
+    <string name="aroiDessert_title">Aroi Dessert Cafe</string>
+    <string name="aroiDessert_description">Aroi Dessert Cafe is a delightful spot combining great coffee with an array of delicious desserts. With its cozy atmosphere and riverside location, it’s a popular hangout for locals. The cafe\'s modern design and friendly service make it an ideal place to enjoy a sweet treat with your coffee.</string>
+    <string name="aroiDessert_address">124 Bach Dang, Hai Chau District, Da Nang, Vietnam</string>
+
+
+    <string name="restaurants_category">Restaurants</string>
+    <string name="bars_category">Bars</string>
+    <string name="coffee_category">Coffee Shops</string>
+
+    <string name="back_button">Back</string>
+    <string name="next_button">Next</string>
+    <string name="previous_button">Previous</string>
+    <string name="categories">Categories</string>
+</resources>
