@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My City of Da Nang</string>
+    <string name="app_name">Da Nang Treasure Hunt</string>
 
     <string name="madamLan_title">Madam Lan</string>
     <string name="madamLan_description">Madam Lan is a popular dining spot in Da Nang, offering a fusion of traditional Vietnamese and modern cuisine. The restaurant is known for its beautiful colonial-style architecture and a diverse menu featuring local specialties like "cao lau" and "banh xeo". It\'s perfect for those wanting to experience authentic Vietnamese flavors in an elegant setting.</string>
@@ -63,7 +63,7 @@
     <string name="clue_2_clue">Get here if you wan\'t to play chess against a legendary old man</string>
     <string name="clue_2_hint">The stationary Confucius checker</string>
     <string name="clue_2_summary">Hilltop lookout point for views of Da Nang city and the sea, with a pensive, chess-playing statue.</string>
-    <string name="clue_2_lat">16.120592581854837</string> ,
+    <string name="clue_2_lat">16.120592581854837</string>
     <string name="clue_2_long">108.27217282527789</string>
 
     <string name="rules_header">Rules and Requirements</string>
