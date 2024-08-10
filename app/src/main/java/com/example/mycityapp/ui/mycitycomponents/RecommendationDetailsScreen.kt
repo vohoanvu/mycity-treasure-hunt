@@ -1,4 +1,4 @@
-package com.example.mycityapp.ui
+package com.example.mycityapp.ui.mycitycomponents
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column

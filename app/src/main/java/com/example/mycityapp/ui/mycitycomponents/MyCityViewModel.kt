@@ -1,4 +1,4 @@
-package com.example.mycityapp.ui
+package com.example.mycityapp.ui.mycitycomponents
 
 import androidx.lifecycle.ViewModel
 import com.example.mycityapp.data.Datasource

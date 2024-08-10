@@ -1,4 +1,4 @@
-package com.example.mycityapp.ui
+package com.example.mycityapp.ui.mycitycomponents
 
 import com.example.mycityapp.data.Datasource
 import com.example.mycityapp.model.Recommendation
