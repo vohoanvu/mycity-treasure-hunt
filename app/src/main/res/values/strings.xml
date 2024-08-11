@@ -66,35 +66,23 @@
     <string name="clue_2_lat">16.120592581854837</string>
     <string name="clue_2_long">108.27217282527789</string>
 
-    <string name="rules_header">Rules and Requirements</string>
+    <string name="rules_header">Rules</string>
 
     <string name="rule_1_number">1</string>
     <string name="rule_1_header">Permissions</string>
-    <string name="rule_1">GPS permissions are needed to verify you are at the correct location for each clue.</string>
+    <string name="rule_1">You need to enable Location (GPS) permissions on your device in order to play this game!</string>
 
     <string name="rule_2_number">2</string>
     <string name="rule_2_header">Start</string>
-    <string name="rule_2">Once you press start below, a timer will begin and you will be taken to your first clue. The faster you find the secret locations, the better!</string>
+    <string name="rule_2">This game is time-constraint, press START to begin.</string>
 
-    <string name="rule_3_number">3</string>
-    <string name="rule_3_header">Feeling Stuck?</string>
-    <string name="rule_3">Tap the Hint button to reveal another clue on where the location is. Be aware, you only get one hint so think hard!</string>
+    <string name="rule_4_number">3</string>
+    <string name="rule_4_header">Success</string>
+    <string name="rule_4">When you get to the location, press FOUND IT button to check if you are right.</string>
 
-    <string name="rule_4_number">4</string>
-    <string name="rule_4_header">Think you\'ve found it?</string>
-    <string name="rule_4">Smack that Found It! button. We\'ll check your location and see if you\'re there.</string>
-
-    <string name="rule_5_number">5</string>
-    <string name="rule_5_header">Not At The Right Place?</string>
-    <string name="rule_5">Dang! Well, we\'ll keep the timer going so think quick and move on to your next guess.</string>
-
-    <string name="rule_6_number">6</string>
-    <string name="rule_6_header">Found The Right Place?</string>
-    <string name="rule_6">Found the right place? Boom! If there are any more destinations, you\'ll be directed to the next clue. </string>
-
-    <string name="rule_7_number">7</string>
-    <string name="rule_7_header">Found All The Treasure?</string>
-    <string name="rule_7">Found all the treasure? Congratulations! You\'ve beat the game. We\'ll let you know how long it took you to finish. Once you\'re ready, you can navigate back to the home page and start again. </string>
+    <string name="rule_6_number">4</string>
+    <string name="rule_6_header">Finish</string>
+    <string name="rule_6">Once you solve the first treasure, press NEXT to move to the next puzzle.</string>
 
     <string name="action_button_text">Start</string>
 
@@ -103,12 +91,12 @@
     <string name="home_button">Home</string>
 
     <string name="dialog_title">Are You Sure?</string>
-    <string name="dialog_content">Listen… I get it, finding these landmarks can be a tall task. If you quit now, you\’ll lose your progress. This can\’t be undone.</string>
+    <string name="dialog_content">You will lose your current progress if quitting!</string>
     <string name="quit_button">Quit</string>
     <string name="cancel_dialog_button">Cancel</string>
 
     <string name="wrong_location_dialog_title">Wrong Location!</string>
-    <string name="wrong_location_dialog_content">Not quite there yet. Think back to the clues you have and try again</string>
+    <string name="wrong_location_dialog_content">You found the wrong place! Try again!</string>
     <string name="wrong_location_dialog_confirm">Okay</string>
 
     <string name="timer_header">Total Time Elapsed</string>

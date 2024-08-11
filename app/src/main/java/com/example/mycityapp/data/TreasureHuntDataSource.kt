@@ -17,30 +17,15 @@ object TreasureHuntDataSource {
             rule = R.string.rule_2
         ),
         Rule(
-            id = R.string.rule_3_number,
-            header = R.string.rule_3_header,
-            rule = R.string.rule_3
-        ),
-        Rule(
             id = R.string.rule_4_number,
             header = R.string.rule_4_header,
             rule = R.string.rule_4
-        ),
-        Rule(
-            id = R.string.rule_5_number,
-            header = R.string.rule_5_header,
-            rule = R.string.rule_5
         ),
         Rule(
             id = R.string.rule_6_number,
             header = R.string.rule_6_header,
             rule = R.string.rule_6
         ),
-        Rule(
-            id = R.string.rule_7_number,
-            header = R.string.rule_7_header,
-            rule = R.string.rule_7
-        )
     )
 
     val allLocations = listOf(
@@ -65,8 +50,4 @@ object TreasureHuntDataSource {
             long = R.string.clue_2_long
         )
     )
-
-    fun getLocation(id: Int): Location? {
-        return allLocations.firstOrNull { it.id == id }
-    }
 }

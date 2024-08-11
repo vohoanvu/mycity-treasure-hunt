@@ -48,7 +48,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    //MyCityApp()
+                    TreasureHuntGameApp()
 
                     val fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
                     // Initialize the location service
@@ -88,7 +88,7 @@ class MainActivity : ComponentActivity() {
 fun MyAppPreview() {
     MyCityAppTheme {
         Surface(color = MaterialTheme.colorScheme.background) {
-
+            TreasureHuntGameApp()
         }
     }
 }

@@ -27,7 +27,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.em
 import androidx.compose.ui.Alignment
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
@@ -76,7 +75,6 @@ fun StartScreen(
                 text = stringResource(R.string.app_name),
                 color = MaterialTheme.colorScheme.primary,
                 textAlign = TextAlign.Center,
-                lineHeight = 1.25.em,
                 style = MaterialTheme.typography.headlineLarge,
                 modifier = Modifier.fillMaxWidth()
                     .wrapContentHeight(align=Alignment.CenterVertically)
@@ -85,7 +83,6 @@ fun StartScreen(
             Text(
                 text = stringResource(R.string.rules_header),
                 color = MaterialTheme.colorScheme.primary,
-                lineHeight = 1.27.em,
                 style = MaterialTheme.typography.titleLarge,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -126,12 +123,6 @@ fun Rule(
                     bottom = 4.dp
                 )
         ) {
-//            Column(
-//                verticalArrangement = Arrangement.Center,
-//                modifier = Modifier.requiredHeight(height = 64.dp)
-//            ) {
-//                BuildingBlocksMonogram(rule.id)
-//            }
             Column(
                 verticalArrangement = Arrangement.spacedBy(10.dp, Alignment.Top),
                 modifier = Modifier
@@ -141,7 +132,6 @@ fun Rule(
                 Text(
                     text = stringResource(rule.header),
                     color = MaterialTheme.colorScheme.onSurface,
-                    lineHeight = 1.27.em,
                     style = MaterialTheme.typography.titleLarge,
                     modifier = Modifier
                         .fillMaxWidth()
@@ -149,7 +139,6 @@ fun Rule(
                 Text(
                     text = stringResource(rule.rule),
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    lineHeight = 1.5.em,
                     style = MaterialTheme.typography.bodyLarge,
                     modifier = Modifier
                         .fillMaxWidth())

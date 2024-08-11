@@ -104,18 +104,14 @@ fun FoundItContent(
     Column(
         verticalArrangement = Arrangement.spacedBy(16.dp, Alignment.Top),
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = modifier
-            .fillMaxHeight()
-            .fillMaxWidth()
+        modifier = modifier.fillMaxHeight().fillMaxWidth()
     ) {
         Text(
             text = header,
             color = MaterialTheme.colorScheme.secondary,
             textAlign = TextAlign.Center,
-            lineHeight = 1.29.em,
             style = MaterialTheme.typography.headlineMedium,
-            modifier = Modifier
-                .fillMaxWidth()
+            modifier = Modifier.fillMaxWidth()
                 .wrapContentHeight(align = Alignment.CenterVertically)
         )
         val painter = painterResource(image)
@@ -130,19 +126,19 @@ fun FoundItContent(
             text = locationName,
             color = MaterialTheme.colorScheme.secondary,
             textAlign = TextAlign.Center,
-            lineHeight = 1.29.em,
             style = MaterialTheme.typography.headlineMedium,
             modifier = Modifier
                 .fillMaxWidth()
-                .wrapContentHeight(align = Alignment.CenterVertically))
+                .wrapContentHeight(align = Alignment.CenterVertically)
+        )
         Text(
             text = locationSummary,
             color = MaterialTheme.colorScheme.secondary,
             textAlign = TextAlign.Center,
-            lineHeight = 1.43.em,
             style = MaterialTheme.typography.bodyMedium,
             modifier = Modifier
                 .fillMaxWidth()
-                .wrapContentHeight(align = Alignment.CenterVertically))
+                .wrapContentHeight(align = Alignment.CenterVertically)
+        )
     }
 }
