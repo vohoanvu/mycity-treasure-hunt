@@ -92,7 +92,6 @@ fun StartScreen(
                     .wrapContentHeight(align = Alignment.CenterVertically)
             )
 
-
             LazyColumn(
                 state = scrollState,
                 modifier = modifier
@@ -114,8 +113,7 @@ fun Rule(
 ) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = modifier
-            .fillMaxWidth()
+        modifier = modifier.fillMaxWidth()
     ) {
         Row(
             horizontalArrangement = Arrangement.spacedBy(16.dp, Alignment.Start),

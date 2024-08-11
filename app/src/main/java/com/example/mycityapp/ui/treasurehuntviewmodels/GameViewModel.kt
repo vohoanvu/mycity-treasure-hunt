@@ -81,10 +81,10 @@ class TimerViewModel : ViewModel()
         _clockState.value = 0
         timerJob?.cancel()
     }
+}
 
-    fun Long.formatTime(): String {
-        val seconds = this % 60
-        val minutes = (this / 60) % 60
-        return String.format(Locale.getDefault(),"%02d : %02d", minutes, seconds)
-    }
+fun Long.formatTime(): String {
+    val seconds = this % 60
+    val minutes = (this / 60) % 60
+    return String.format(Locale.getDefault(),"%02d : %02d", minutes, seconds)
 }
