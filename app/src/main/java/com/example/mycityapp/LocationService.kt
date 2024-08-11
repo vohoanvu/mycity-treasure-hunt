@@ -4,6 +4,12 @@ import android.annotation.SuppressLint
 import android.os.Looper
 import com.google.android.gms.location.*
 
+/* Assignment 5 Demo
+LocationService.kt
+Vu Vo / vovu@oregonstate.edu
+CS 492 / Oregon State University
+*/
+
 class LocationService(private val fusedLocationClient: FusedLocationProviderClient) {
 
     private lateinit var locationRequest: LocationRequest
@@ -30,7 +36,6 @@ class LocationService(private val fusedLocationClient: FusedLocationProviderClie
                 super.onLocationResult(locationResult)
                 val location = locationResult.lastLocation
                 // Handle the location update
-                // You can update the UI or handle game logic based on location here
             }
         }
     }

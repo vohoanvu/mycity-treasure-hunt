@@ -3,6 +3,12 @@ package com.example.mycityapp.model
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 
+/* Assignment 5 Demo
+TreasureHuntGame.kt
+Vu Vo / vovu@oregonstate.edu
+CS 492 / Oregon State University
+*/
+
 data class Location(
     val id: Int,
     @StringRes val name: Int,

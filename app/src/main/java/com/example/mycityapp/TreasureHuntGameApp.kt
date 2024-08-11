@@ -33,6 +33,12 @@ import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt
 
+/* Assignment 5 Demo
+TreasureHuntGameApp.kt
+Vu Vo / vovu@oregonstate.edu
+CS 492 / Oregon State University
+*/
+
 enum class TreasureHuntGameScreen {
     Home, Clue, Found
 }
@@ -43,10 +49,6 @@ fun TreasureHuntGameApp(
     gameVM: GameViewModel = viewModel(),
     navController: NavHostController = rememberNavController()
 ) {
-    //val backStackEntry by navController.currentBackStackEntryAsState()
-//    val currentScreen = TreasureHuntGameScreen.valueOf(
-//        backStackEntry?.destination?.route ?: TreasureHuntGameScreen.Home.name
-//    )
     val gameState by gameVM.uiState.collectAsState()
     val gameClock by clockVM.clockState.collectAsState()
 
@@ -84,7 +86,7 @@ fun TreasureHuntGameApp(
                                 showLoadingLocationIndicator = false
                                 navController.navigate(TreasureHuntGameScreen.Found.name)
                                 clockVM.pause()
-                                gameVM.advanceToNextClue()
+                                gameVM.goToNextClue()
                             } else {
                                 showLoadingLocationIndicator = false
                                 showWrongLocationDialog = true

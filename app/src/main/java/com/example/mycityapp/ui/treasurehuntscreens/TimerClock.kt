@@ -19,6 +19,12 @@ import androidx.compose.ui.unit.sp
 import com.example.mycityapp.R
 import com.example.mycityapp.ui.treasurehuntviewmodels.formatTime
 
+/* Assignment 5 Demo
+TimerClock.kt
+Vu Vo / vovu@oregonstate.edu
+CS 492 / Oregon State University
+*/
+
 @Composable
 fun TimerClock(
     clockState: Long,

@@ -11,7 +11,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.FabPosition
@@ -27,6 +26,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
@@ -36,6 +36,12 @@ import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
 import com.example.mycityapp.R
 import com.example.mycityapp.model.GameState
+
+/* Assignment 5 Demo
+ClueScreen.kt
+Vu Vo / vovu@oregonstate.edu
+CS 492 / Oregon State University
+*/
 
 @Composable
 fun ClueScreen(
@@ -117,22 +123,20 @@ fun ClueBox(clue: String, modifier: Modifier = Modifier) {
     Column(
         verticalArrangement = Arrangement.spacedBy(16.dp, Alignment.Top),
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = modifier.background(color = MaterialTheme.colorScheme.onPrimaryContainer)
+        modifier = modifier.background(color = Color.Green)
             .padding(all = 16.dp)
     ) {
         Text(
             text = "Clue",
-            color = MaterialTheme.colorScheme.onPrimary,
+            color = Color.White,
             textAlign = TextAlign.Center,
-            lineHeight = 1.25.em,
             style = MaterialTheme.typography.headlineLarge,
             modifier = Modifier
                 .wrapContentHeight(align = Alignment.CenterVertically))
         Text(
             text = clue,
-            color = MaterialTheme.colorScheme.onPrimary,
+            color = MaterialTheme.colorScheme.primary,
             textAlign = TextAlign.Center,
-            lineHeight = 1.5.em,
             style = MaterialTheme.typography.bodyLarge,
             modifier = Modifier
                 .wrapContentHeight(align = Alignment.CenterVertically))
@@ -145,22 +149,20 @@ fun HintBox(hint: String, modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.spacedBy(16.dp, Alignment.Top),
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier
-            .background(color = MaterialTheme.colorScheme.onTertiaryContainer)
+            .background(color = Color.Green)
             .padding(all = 16.dp)
     ) {
         Text(
             text = "Hint",
-            color = MaterialTheme.colorScheme.onTertiary,
+            color = Color.White,
             textAlign = TextAlign.Center,
-            lineHeight = 1.25.em,
             style = MaterialTheme.typography.headlineLarge,
             modifier = Modifier
                 .wrapContentHeight(align = Alignment.CenterVertically))
         Text(
             text = hint,
-            color = MaterialTheme.colorScheme.onTertiary,
+            color = MaterialTheme.colorScheme.primary,
             textAlign = TextAlign.Center,
-            lineHeight = 1.5.em,
             style = MaterialTheme.typography.bodyLarge,
             modifier = Modifier
                 .wrapContentHeight(align = Alignment.CenterVertically))
@@ -174,12 +176,11 @@ fun HintButton(
 ) {
     Button(
         onClick = onClick,
-        colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary),
         contentPadding = PaddingValues(start = 16.dp, top = 10.dp, end = 24.dp, bottom = 10.dp),
         modifier = modifier.fillMaxWidth()
     ) {
         Icon(
-            painter = painterResource(R.drawable.attractions_icon),
+            painter = painterResource(R.drawable.location_icon),
             contentDescription = "icon",
             tint = MaterialTheme.colorScheme.onPrimary,
             modifier = Modifier.padding(end = 8.dp)
@@ -201,7 +202,6 @@ fun QuitButton(
 ) {
     Button(
         onClick = onClick,
-        colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error),
         contentPadding = PaddingValues(start = 16.dp, top = 10.dp, end = 24.dp, bottom = 10.dp),
         modifier = modifier.fillMaxWidth()
     ) {
@@ -289,7 +289,7 @@ fun WrongLocationDialog(
         title = {
             Text(
                 text = stringResource(R.string.wrong_location_dialog_title),
-                color = MaterialTheme.colorScheme.onSurface,
+                color = Color.White,
                 style = MaterialTheme.typography.headlineSmall,
                 modifier = Modifier
                     .wrapContentHeight(align = Alignment.CenterVertically))
@@ -297,13 +297,14 @@ fun WrongLocationDialog(
         text = {
             Text(
                 text = stringResource(R.string.wrong_location_dialog_content),
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                color = Color.White,
                 style = TextStyle(
                     fontSize = 14.sp,
                     letterSpacing = 0.25.sp),
                 modifier = Modifier
                     .wrapContentHeight(align = Alignment.CenterVertically))
         },
-        containerColor = MaterialTheme.colorScheme.surfaceContainerHigh,
-        modifier = modifier)
+        containerColor = MaterialTheme.colorScheme.onPrimaryContainer,
+        modifier = modifier
+    )
 }

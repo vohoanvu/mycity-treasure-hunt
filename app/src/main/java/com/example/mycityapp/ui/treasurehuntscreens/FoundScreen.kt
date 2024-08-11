@@ -25,9 +25,14 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.em
 import com.example.mycityapp.R
 import com.example.mycityapp.model.GameState
+
+/* Assignment 5 Demo
+FoundScreen.kt
+Vu Vo / vovu@oregonstate.edu
+CS 492 / Oregon State University
+*/
 
 @Composable
 fun FoundItScreen(
@@ -82,7 +87,7 @@ fun FoundItScreen(
         ) {
             TimerClock(gameClock)
             gameState.foundClue?.let {
-                FoundItContent(
+                FinalClueDetails(
                     header = header,
                     locationName = stringResource(it.name),
                     locationSummary = stringResource(it.summary),
@@ -94,7 +99,7 @@ fun FoundItScreen(
 }
 
 @Composable
-fun FoundItContent(
+fun FinalClueDetails(
     header: String,
     locationName: String,
     locationSummary: String,

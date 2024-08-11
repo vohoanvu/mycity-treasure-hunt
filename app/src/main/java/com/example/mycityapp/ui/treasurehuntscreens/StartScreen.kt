@@ -17,12 +17,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
-import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
@@ -32,11 +28,15 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.runtime.mutableIntStateOf
 import com.example.mycityapp.R
 import com.example.mycityapp.data.TreasureHuntDataSource.allRules
 import com.example.mycityapp.model.Rule
-import kotlinx.coroutines.flow.distinctUntilChanged
+
+/* Assignment 5 Demo
+StartScreen.kt
+Vu Vo / vovu@oregonstate.edu
+CS 492 / Oregon State University
+*/
 
 @Composable
 fun StartScreen(
@@ -45,16 +45,6 @@ fun StartScreen(
 ) {
     val scrollState = rememberLazyListState()
     val isScrollingUp = remember { mutableStateOf(true) }
-    var previousFirstVisibleItemIndex by remember { mutableIntStateOf(0) }
-
-    LaunchedEffect(scrollState) {
-        snapshotFlow { scrollState.firstVisibleItemIndex }
-            .distinctUntilChanged()
-            .collect { newIndex ->
-                isScrollingUp.value = newIndex <= previousFirstVisibleItemIndex
-                previousFirstVisibleItemIndex = newIndex
-            }
-    }
 
     Scaffold(
         floatingActionButton = {
@@ -84,9 +74,7 @@ fun StartScreen(
                 text = stringResource(R.string.rules_header),
                 color = MaterialTheme.colorScheme.primary,
                 style = MaterialTheme.typography.titleLarge,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .wrapContentHeight(align = Alignment.CenterVertically)
+                modifier = Modifier.wrapContentHeight(align = Alignment.CenterVertically).padding(start = 16.dp)
             )
 
             LazyColumn(

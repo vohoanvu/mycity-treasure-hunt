@@ -4,6 +4,12 @@ import com.example.mycityapp.R
 import com.example.mycityapp.model.Location
 import com.example.mycityapp.model.Rule
 
+/* Assignment 5 Demo
+TreasureHuntDatasource.kt
+Vu Vo / vovu@oregonstate.edu
+CS 492 / Oregon State University
+*/
+
 object TreasureHuntDataSource {
     val allRules = listOf(
         Rule(

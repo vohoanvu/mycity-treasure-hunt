@@ -14,6 +14,12 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import java.util.Locale
 
+/* Assignment 5 Demo
+GameViewModel.kt
+Vu Vo / vovu@oregonstate.edu
+CS 492 / Oregon State University
+*/
+
 class GameViewModel : ViewModel() {
     private val allClues = TreasureHuntDataSource.allLocations
 
@@ -28,7 +34,7 @@ class GameViewModel : ViewModel() {
     )
     val uiState: StateFlow<GameState> = _uiState.asStateFlow()
 
-    fun advanceToNextClue() {
+    fun goToNextClue() {
         _uiState.update { currentState ->
             var nextLocation: Location? = null
             var index = currentState.currentClueIndex

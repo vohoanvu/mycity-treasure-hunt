@@ -17,7 +17,7 @@ import com.example.mycityapp.ui.theme.MyCityAppTheme
 import android.Manifest
 import com.google.android.gms.location.LocationServices
 
-/* Assignment 4 Demo
+/* Assignment 5 Demo
 MainActivity.kt
 Vu Vo / vovu@oregonstate.edu
 CS 492 / Oregon State University
@@ -34,7 +34,6 @@ class MainActivity : ComponentActivity() {
                 locationService.startLocationUpdates()
             } else {
                 // Handle permission denied case
-                // You might want to show a dialog explaining why the location is necessary
             }
         }
 
@@ -51,7 +50,6 @@ class MainActivity : ComponentActivity() {
                     TreasureHuntGameApp()
 
                     val fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
-                    // Initialize the location service
                     locationService = LocationService(fusedLocationClient)
 
                     // Request permissions and start location updates
@@ -64,9 +62,11 @@ class MainActivity : ComponentActivity() {
 
     fun checkPermissionsAndRequestLocationUpdates() {
         when {
-            ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
-                    && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED -> {
-                locationService.startLocationUpdates()
+            ActivityCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
+                    && ActivityCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED -> {
+                    locationService.startLocationUpdates()
             }
             else -> {
                 requestPermissionLauncher.launch(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION,
